@@ -1,0 +1,537 @@
+[debug] [2020-03-06T05:48:45.277Z] ----------------------------------------------------------------------
+[debug] [2020-03-06T05:48:45.279Z] Command:       /home/seba/.nvm/versions/node/v8.17.0/bin/node /home/seba/.nvm/versions/node/v8.17.0/bin/firebase serve --only functions
+[debug] [2020-03-06T05:48:45.279Z] CLI Version:   7.14.0
+[debug] [2020-03-06T05:48:45.279Z] Platform:      linux
+[debug] [2020-03-06T05:48:45.279Z] Node Version:  v8.17.0
+[debug] [2020-03-06T05:48:45.279Z] Time:          Fri Mar 06 2020 02:48:45 GMT-0300 (-03)
+[debug] [2020-03-06T05:48:45.279Z] ----------------------------------------------------------------------
+[debug] [2020-03-06T05:48:45.279Z] 
+[debug] [2020-03-06T05:48:45.288Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-06T05:48:45.288Z] > authorizing via signed-in user
+[debug] [2020-03-06T05:48:45.288Z] [iam] checking project cost-calculator-3ae3c for permissions ["firebase.projects.get"]
+[debug] [2020-03-06T05:48:45.290Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cost-calculator-3ae3c:testIamPermissions  
+
+[debug] [2020-03-06T05:48:46.595Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-06T05:48:46.598Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cost-calculator-3ae3c  
+ 
+[debug] [2020-03-06T05:48:47.816Z] <<< HTTP RESPONSE 200
+[warn] ⚠  Your requested "node" version "10" doesn't match your global version "8"
+[info] ✔  functions: functions emulator started at http://localhost:5000
+[info] i  functions: Watching "/opt/programacion/Proyectos/bren/functions" for Cloud Functions...
+[debug] [2020-03-06T05:48:47.890Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-06T05:48:47.890Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-06T05:48:47.890Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-06T05:48:47.890Z] [worker-~diagnostic~-30f195bf-6d74-490e-9d0c-346e4c47d5a8]: Assigning socketPath: /tmp/fire_emu_24135.sock
+[debug] [2020-03-06T05:48:47.891Z] [worker-~diagnostic~-30f195bf-6d74-490e-9d0c-346e4c47d5a8]: BUSY
+[debug] [2020-03-06T05:48:48.125Z] [runtime-status] [24135] Functions runtime initialized. {"cwd":"/opt/programacion/Proyectos/bren/functions","node_version":"8.17.0"}
+[debug] [2020-03-06T05:48:48.127Z] [runtime-status] [24135] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-06T05:48:48.129Z] [runtime-status] [24135] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/opt/programacion/Proyectos/bren/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-06T05:48:48.130Z] [runtime-status] [24135] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/opt/programacion/Proyectos/bren/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-06T05:48:48.131Z] [runtime-status] [24135] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/opt/programacion/Proyectos/bren/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[api]: http function initialized (http://localhost:5000/cost-calculator-3ae3c/us-central1/api).
+[info] i  functions[createElementTrigger]: function ignored because the firestore emulator does not exist or is not running.
+[debug] [2020-03-06T05:48:48.843Z] [worker-~diagnostic~-30f195bf-6d74-490e-9d0c-346e4c47d5a8]: IDLE
+[debug] [2020-03-06T05:48:58.088Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T05:48:58.089Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T05:48:58.089Z] Accepted request OPTIONS /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T05:48:58.102Z] [worker-pool] addWorker(api)
+[debug] [2020-03-06T05:48:58.103Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-03-06T05:48:58.103Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T05:48:58.103Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:48:58.103Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T05:48:58.466Z] [runtime-status] [24227] Functions runtime initialized. {"cwd":"/opt/programacion/Proyectos/bren/functions","node_version":"8.17.0"}
+[debug] [2020-03-06T05:48:58.468Z] [runtime-status] [24227] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-06T05:48:58.470Z] [runtime-status] [24227] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/opt/programacion/Proyectos/bren/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-06T05:48:58.471Z] [runtime-status] [24227] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/opt/programacion/Proyectos/bren/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-06T05:48:58.472Z] [runtime-status] [24227] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/opt/programacion/Proyectos/bren/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-06T05:48:58.787Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T05:48:58.787Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T05:48:58.788Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T05:48:58.792Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:48:58.799Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T05:48:58.809Z] [runtime-status] [24227] Ephemeral server handling OPTIONS request
+[debug] [2020-03-06T05:48:58.815Z] [runtime-status] [24227] Ephemeral server survived.
+[debug] [2020-03-06T05:48:58.820Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-03-06T05:48:58.820Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-03-06T05:48:58.820Z] Accepted request GET /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T05:48:58.824Z] [worker-pool] addWorker(api)
+[debug] [2020-03-06T05:48:58.824Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-03-06T05:48:58.824Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T05:48:58.824Z] [worker-api-ebce8432-4c71-4485-ae3c-aa311a475b3d]: Assigning socketPath: /tmp/fire_emu_24235.sock
+[debug] [2020-03-06T05:48:58.824Z] [worker-api-ebce8432-4c71-4485-ae3c-aa311a475b3d]: BUSY
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T05:48:58.825Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T05:48:58.826Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T05:48:59.057Z] [runtime-status] [24235] Functions runtime initialized. {"cwd":"/opt/programacion/Proyectos/bren/functions","node_version":"8.17.0"}
+[debug] [2020-03-06T05:48:59.060Z] [runtime-status] [24235] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-06T05:48:59.062Z] [runtime-status] [24235] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/opt/programacion/Proyectos/bren/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-06T05:48:59.063Z] [runtime-status] [24235] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/opt/programacion/Proyectos/bren/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-06T05:48:59.065Z] [runtime-status] [24235] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/opt/programacion/Proyectos/bren/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-06T05:48:59.403Z] [runtime-status] [24235] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T05:48:59.404Z] [runtime-status] [24235] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T05:48:59.404Z] [runtime-status] [24235] Running api in mode HTTPS
+[debug] [2020-03-06T05:48:59.409Z] [runtime-status] [24235] Attempting to listen to socketPath: /tmp/fire_emu_24235.sock
+[debug] [2020-03-06T05:48:59.413Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T05:48:59.421Z] [runtime-status] [24235] Ephemeral server handling GET request
+[debug] [2020-03-06T05:48:59.532Z] [runtime-status] [24235] Ephemeral server survived.
+[info] >  { name: 'Sebastian Wetzel',
+[info] >    picture: 'https://lh3.googleusercontent.com/a-/AAuE7mB_X28XWzr2RFgLvk6xH51nSNh0i8E2Nby6VXA-Tw',
+[info] >    iss: 'https://securetoken.google.com/cost-calculator-3ae3c',
+[info] >    aud: 'cost-calculator-3ae3c',
+[info] >    auth_time: 1583472916,
+[info] >    user_id: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    sub: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    iat: 1583472916,
+[info] >    exp: 1583476516,
+[info] >    email: 'seba.wetzel@gmail.com',
+[info] >    email_verified: true,
+[info] >    firebase: 
+[info] >     { identities: { 'google.com': [Array], email: [Array] },
+[info] >       sign_in_provider: 'google.com' },
+[info] >    uid: 'woKVeoDOQUdyDJIDjl5BmediRNz2' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T05:48:59.821Z] [worker-api-ebce8432-4c71-4485-ae3c-aa311a475b3d]: IDLE
+[debug] [2020-03-06T05:48:59.821Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T05:49:33.487Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T05:49:33.487Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T05:49:33.487Z] Accepted request OPTIONS /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T05:49:33.488Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T05:49:33.488Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:49:33.488Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T05:49:33.492Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T05:49:33.492Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T05:49:33.493Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T05:49:33.493Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:49:33.494Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T05:49:33.503Z] [runtime-status] [24227] Ephemeral server handling OPTIONS request
+[debug] [2020-03-06T05:49:33.503Z] [runtime-status] [24227] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T05:49:33.505Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T05:49:33.505Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T05:49:33.518Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T05:49:33.518Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T05:49:33.518Z] Accepted request GET /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T05:49:33.518Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T05:49:33.518Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:49:33.518Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T05:49:33.522Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T05:49:33.522Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T05:49:33.522Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T05:49:33.522Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:49:33.523Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T05:49:33.530Z] [runtime-status] [24227] Ephemeral server handling GET request
+[debug] [2020-03-06T05:49:33.596Z] [runtime-status] [24227] Ephemeral server survived.
+[info] >  { name: 'Sebastian Wetzel',
+[info] >    picture: 'https://lh3.googleusercontent.com/a-/AAuE7mB_X28XWzr2RFgLvk6xH51nSNh0i8E2Nby6VXA-Tw',
+[info] >    iss: 'https://securetoken.google.com/cost-calculator-3ae3c',
+[info] >    aud: 'cost-calculator-3ae3c',
+[info] >    auth_time: 1583472916,
+[info] >    user_id: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    sub: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    iat: 1583472916,
+[info] >    exp: 1583476516,
+[info] >    email: 'seba.wetzel@gmail.com',
+[info] >    email_verified: true,
+[info] >    firebase: 
+[info] >     { identities: { 'google.com': [Array], email: [Array] },
+[info] >       sign_in_provider: 'google.com' },
+[info] >    uid: 'woKVeoDOQUdyDJIDjl5BmediRNz2' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T05:49:33.733Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T05:49:33.733Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T05:55:44.625Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T05:55:44.625Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T05:55:44.625Z] Accepted request OPTIONS /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T05:55:44.625Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T05:55:44.625Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:55:44.625Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T05:55:44.626Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T05:55:44.627Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T05:55:44.627Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T05:55:44.627Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:55:44.629Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T05:55:44.636Z] [runtime-status] [24227] Ephemeral server handling OPTIONS request
+[debug] [2020-03-06T05:55:44.636Z] [runtime-status] [24227] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T05:55:44.642Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T05:55:44.642Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T05:55:44.700Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T05:55:44.700Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T05:55:44.700Z] Accepted request GET /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T05:55:44.701Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T05:55:44.701Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:55:44.701Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T05:55:44.706Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T05:55:44.707Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T05:55:44.707Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T05:55:44.707Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:55:44.708Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T05:55:44.714Z] [runtime-status] [24227] Ephemeral server handling GET request
+[debug] [2020-03-06T05:55:44.714Z] [runtime-status] [24227] Ephemeral server survived.
+[info] >  { name: 'Sebastian Wetzel',
+[info] >    picture: 'https://lh3.googleusercontent.com/a-/AAuE7mB_X28XWzr2RFgLvk6xH51nSNh0i8E2Nby6VXA-Tw',
+[info] >    iss: 'https://securetoken.google.com/cost-calculator-3ae3c',
+[info] >    aud: 'cost-calculator-3ae3c',
+[info] >    auth_time: 1583472916,
+[info] >    user_id: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    sub: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    iat: 1583472916,
+[info] >    exp: 1583476516,
+[info] >    email: 'seba.wetzel@gmail.com',
+[info] >    email_verified: true,
+[info] >    firebase: 
+[info] >     { identities: { 'google.com': [Array], email: [Array] },
+[info] >       sign_in_provider: 'google.com' },
+[info] >    uid: 'woKVeoDOQUdyDJIDjl5BmediRNz2' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T05:55:44.729Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T05:55:44.729Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T05:55:58.410Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T05:55:58.410Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T05:55:58.411Z] Accepted request OPTIONS /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T05:55:58.411Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T05:55:58.411Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:55:58.411Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T05:55:58.414Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T05:55:58.415Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T05:55:58.415Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T05:55:58.415Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:55:58.415Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T05:55:58.426Z] [runtime-status] [24227] Ephemeral server handling OPTIONS request
+[debug] [2020-03-06T05:55:58.427Z] [runtime-status] [24227] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T05:55:58.427Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T05:55:58.427Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T05:55:58.434Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T05:55:58.435Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T05:55:58.435Z] Accepted request GET /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T05:55:58.435Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T05:55:58.435Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:55:58.435Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T05:55:58.442Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T05:55:58.443Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T05:55:58.443Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T05:55:58.443Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T05:55:58.450Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T05:55:58.458Z] [runtime-status] [24227] Ephemeral server handling GET request
+[debug] [2020-03-06T05:55:58.458Z] [runtime-status] [24227] Ephemeral server survived.
+[info] >  { name: 'Sebastian Wetzel',
+[info] >    picture: 'https://lh3.googleusercontent.com/a-/AAuE7mB_X28XWzr2RFgLvk6xH51nSNh0i8E2Nby6VXA-Tw',
+[info] >    iss: 'https://securetoken.google.com/cost-calculator-3ae3c',
+[info] >    aud: 'cost-calculator-3ae3c',
+[info] >    auth_time: 1583472916,
+[info] >    user_id: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    sub: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    iat: 1583472916,
+[info] >    exp: 1583476516,
+[info] >    email: 'seba.wetzel@gmail.com',
+[info] >    email_verified: true,
+[info] >    firebase: 
+[info] >     { identities: { 'google.com': [Array], email: [Array] },
+[info] >       sign_in_provider: 'google.com' },
+[info] >    uid: 'woKVeoDOQUdyDJIDjl5BmediRNz2' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T05:55:58.471Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T05:55:58.471Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T06:05:35.328Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T06:05:35.328Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T06:05:35.328Z] Accepted request OPTIONS /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T06:05:35.328Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T06:05:35.328Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:05:35.328Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T06:05:35.330Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T06:05:35.332Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T06:05:35.332Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T06:05:35.332Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:05:35.333Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T06:05:35.341Z] [runtime-status] [24227] Ephemeral server handling OPTIONS request
+[debug] [2020-03-06T06:05:35.341Z] [runtime-status] [24227] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T06:05:35.345Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T06:05:35.345Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T06:05:35.384Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T06:05:35.385Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T06:05:35.385Z] Accepted request GET /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T06:05:35.385Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T06:05:35.385Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:05:35.385Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T06:05:35.388Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T06:05:35.389Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T06:05:35.389Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T06:05:35.389Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:05:35.390Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T06:05:35.401Z] [runtime-status] [24227] Ephemeral server handling GET request
+[debug] [2020-03-06T06:05:35.401Z] [runtime-status] [24227] Ephemeral server survived.
+[info] >  { name: 'Sebastian Wetzel',
+[info] >    picture: 'https://lh3.googleusercontent.com/a-/AAuE7mB_X28XWzr2RFgLvk6xH51nSNh0i8E2Nby6VXA-Tw',
+[info] >    iss: 'https://securetoken.google.com/cost-calculator-3ae3c',
+[info] >    aud: 'cost-calculator-3ae3c',
+[info] >    auth_time: 1583472916,
+[info] >    user_id: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    sub: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    iat: 1583472916,
+[info] >    exp: 1583476516,
+[info] >    email: 'seba.wetzel@gmail.com',
+[info] >    email_verified: true,
+[info] >    firebase: 
+[info] >     { identities: { 'google.com': [Array], email: [Array] },
+[info] >       sign_in_provider: 'google.com' },
+[info] >    uid: 'woKVeoDOQUdyDJIDjl5BmediRNz2' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T06:05:35.428Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T06:05:35.428Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T06:05:40.362Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T06:05:40.362Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T06:05:40.362Z] Accepted request OPTIONS /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T06:05:40.362Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T06:05:40.363Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:05:40.363Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T06:05:40.365Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T06:05:40.365Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T06:05:40.365Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T06:05:40.365Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:05:40.366Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T06:05:40.372Z] [runtime-status] [24227] Ephemeral server handling OPTIONS request
+[debug] [2020-03-06T06:05:40.372Z] [runtime-status] [24227] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T06:05:40.375Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T06:05:40.375Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T06:05:40.387Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T06:05:40.387Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T06:05:40.387Z] Accepted request GET /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T06:05:40.387Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T06:05:40.387Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:05:40.388Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T06:05:40.388Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T06:05:40.389Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T06:05:40.389Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T06:05:40.389Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:05:40.390Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T06:05:40.395Z] [runtime-status] [24227] Ephemeral server handling GET request
+[debug] [2020-03-06T06:05:40.395Z] [runtime-status] [24227] Ephemeral server survived.
+[info] >  { name: 'Sebastian Wetzel',
+[info] >    picture: 'https://lh3.googleusercontent.com/a-/AAuE7mB_X28XWzr2RFgLvk6xH51nSNh0i8E2Nby6VXA-Tw',
+[info] >    iss: 'https://securetoken.google.com/cost-calculator-3ae3c',
+[info] >    aud: 'cost-calculator-3ae3c',
+[info] >    auth_time: 1583472916,
+[info] >    user_id: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    sub: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    iat: 1583472916,
+[info] >    exp: 1583476516,
+[info] >    email: 'seba.wetzel@gmail.com',
+[info] >    email_verified: true,
+[info] >    firebase: 
+[info] >     { identities: { 'google.com': [Array], email: [Array] },
+[info] >       sign_in_provider: 'google.com' },
+[info] >    uid: 'woKVeoDOQUdyDJIDjl5BmediRNz2' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T06:05:40.414Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T06:05:40.414Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T06:07:46.399Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T06:07:46.399Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T06:07:46.400Z] Accepted request OPTIONS /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T06:07:46.400Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T06:07:46.400Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:07:46.400Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T06:07:46.403Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T06:07:46.404Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T06:07:46.404Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T06:07:46.404Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:07:46.406Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T06:07:46.412Z] [runtime-status] [24227] Ephemeral server handling OPTIONS request
+[debug] [2020-03-06T06:07:46.413Z] [runtime-status] [24227] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T06:07:46.413Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T06:07:46.413Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T06:07:46.436Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T06:07:46.436Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T06:07:46.436Z] Accepted request GET /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T06:07:46.436Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T06:07:46.437Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:07:46.437Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T06:07:46.441Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T06:07:46.442Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T06:07:46.442Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T06:07:46.442Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:07:46.443Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T06:07:46.452Z] [runtime-status] [24227] Ephemeral server handling GET request
+[debug] [2020-03-06T06:07:46.453Z] [runtime-status] [24227] Ephemeral server survived.
+[info] >  { name: 'Sebastian Wetzel',
+[info] >    picture: 'https://lh3.googleusercontent.com/a-/AAuE7mB_X28XWzr2RFgLvk6xH51nSNh0i8E2Nby6VXA-Tw',
+[info] >    iss: 'https://securetoken.google.com/cost-calculator-3ae3c',
+[info] >    aud: 'cost-calculator-3ae3c',
+[info] >    auth_time: 1583472916,
+[info] >    user_id: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    sub: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    iat: 1583472916,
+[info] >    exp: 1583476516,
+[info] >    email: 'seba.wetzel@gmail.com',
+[info] >    email_verified: true,
+[info] >    firebase: 
+[info] >     { identities: { 'google.com': [Array], email: [Array] },
+[info] >       sign_in_provider: 'google.com' },
+[info] >    uid: 'woKVeoDOQUdyDJIDjl5BmediRNz2' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T06:07:46.458Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T06:07:46.458Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T06:07:47.984Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T06:07:47.984Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T06:07:47.984Z] Accepted request OPTIONS /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T06:07:47.984Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T06:07:47.984Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:07:47.984Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T06:07:47.987Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T06:07:47.988Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T06:07:47.988Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T06:07:47.988Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:07:47.989Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T06:07:47.993Z] [runtime-status] [24227] Ephemeral server handling OPTIONS request
+[debug] [2020-03-06T06:07:47.994Z] [runtime-status] [24227] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T06:07:47.997Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T06:07:47.997Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T06:07:48.008Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T06:07:48.009Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T06:07:48.009Z] Accepted request GET /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T06:07:48.009Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T06:07:48.009Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:07:48.009Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T06:07:48.011Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T06:07:48.012Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T06:07:48.012Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T06:07:48.012Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:07:48.014Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T06:07:48.020Z] [runtime-status] [24227] Ephemeral server handling GET request
+[debug] [2020-03-06T06:07:48.020Z] [runtime-status] [24227] Ephemeral server survived.
+[info] >  { name: 'Sebastian Wetzel',
+[info] >    picture: 'https://lh3.googleusercontent.com/a-/AAuE7mB_X28XWzr2RFgLvk6xH51nSNh0i8E2Nby6VXA-Tw',
+[info] >    iss: 'https://securetoken.google.com/cost-calculator-3ae3c',
+[info] >    aud: 'cost-calculator-3ae3c',
+[info] >    auth_time: 1583472916,
+[info] >    user_id: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    sub: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    iat: 1583472916,
+[info] >    exp: 1583476516,
+[info] >    email: 'seba.wetzel@gmail.com',
+[info] >    email_verified: true,
+[info] >    firebase: 
+[info] >     { identities: { 'google.com': [Array], email: [Array] },
+[info] >       sign_in_provider: 'google.com' },
+[info] >    uid: 'woKVeoDOQUdyDJIDjl5BmediRNz2' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T06:07:48.031Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T06:07:48.031Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T06:07:50.171Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T06:07:50.171Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T06:07:50.171Z] Accepted request OPTIONS /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T06:07:50.171Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T06:07:50.171Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:07:50.172Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T06:07:50.175Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T06:07:50.176Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T06:07:50.176Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T06:07:50.176Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:07:50.177Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T06:07:50.187Z] [runtime-status] [24227] Ephemeral server handling OPTIONS request
+[debug] [2020-03-06T06:07:50.188Z] [runtime-status] [24227] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T06:07:50.192Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T06:07:50.192Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T06:07:50.194Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T06:07:50.194Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T06:07:50.194Z] Accepted request GET /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T06:07:50.194Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T06:07:50.194Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:07:50.194Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T06:07:50.200Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T06:07:50.201Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T06:07:50.201Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T06:07:50.202Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:07:50.203Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T06:07:50.211Z] [runtime-status] [24227] Ephemeral server handling GET request
+[debug] [2020-03-06T06:07:50.211Z] [runtime-status] [24227] Ephemeral server survived.
+[info] >  { name: 'Sebastian Wetzel',
+[info] >    picture: 'https://lh3.googleusercontent.com/a-/AAuE7mB_X28XWzr2RFgLvk6xH51nSNh0i8E2Nby6VXA-Tw',
+[info] >    iss: 'https://securetoken.google.com/cost-calculator-3ae3c',
+[info] >    aud: 'cost-calculator-3ae3c',
+[info] >    auth_time: 1583472916,
+[info] >    user_id: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    sub: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    iat: 1583472916,
+[info] >    exp: 1583476516,
+[info] >    email: 'seba.wetzel@gmail.com',
+[info] >    email_verified: true,
+[info] >    firebase: 
+[info] >     { identities: { 'google.com': [Array], email: [Array] },
+[info] >       sign_in_provider: 'google.com' },
+[info] >    uid: 'woKVeoDOQUdyDJIDjl5BmediRNz2' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T06:07:50.222Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T06:07:50.222Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T06:12:10.422Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T06:12:10.422Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T06:12:10.422Z] Accepted request OPTIONS /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T06:12:10.422Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T06:12:10.423Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:12:10.423Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T06:12:10.425Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T06:12:10.425Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T06:12:10.425Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T06:12:10.426Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:12:10.426Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T06:12:10.430Z] [runtime-status] [24227] Ephemeral server handling OPTIONS request
+[debug] [2020-03-06T06:12:10.430Z] [runtime-status] [24227] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T06:12:10.432Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T06:12:10.432Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T06:12:10.443Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T06:12:10.443Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T06:12:10.445Z] Accepted request GET /cost-calculator-3ae3c/us-central1/api/hola --> api
+[debug] [2020-03-06T06:12:10.445Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T06:12:10.445Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: Assigning socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:12:10.445Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: BUSY
+[debug] [2020-03-06T06:12:10.447Z] [runtime-status] [24227] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T06:12:10.447Z] [runtime-status] [24227] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T06:12:10.447Z] [runtime-status] [24227] Running api in mode HTTPS
+[debug] [2020-03-06T06:12:10.448Z] [runtime-status] [24227] Attempting to listen to socketPath: /tmp/fire_emu_24227.sock
+[debug] [2020-03-06T06:12:10.449Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T06:12:10.458Z] [runtime-status] [24227] Ephemeral server handling GET request
+[debug] [2020-03-06T06:12:10.458Z] [runtime-status] [24227] Ephemeral server survived.
+[info] >  { name: 'Sebastian Wetzel',
+[info] >    picture: 'https://lh3.googleusercontent.com/a-/AAuE7mB_X28XWzr2RFgLvk6xH51nSNh0i8E2Nby6VXA-Tw',
+[info] >    iss: 'https://securetoken.google.com/cost-calculator-3ae3c',
+[info] >    aud: 'cost-calculator-3ae3c',
+[info] >    auth_time: 1583472916,
+[info] >    user_id: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    sub: 'woKVeoDOQUdyDJIDjl5BmediRNz2',
+[info] >    iat: 1583472916,
+[info] >    exp: 1583476516,
+[info] >    email: 'seba.wetzel@gmail.com',
+[info] >    email_verified: true,
+[info] >    firebase: 
+[info] >     { identities: { 'google.com': [Array], email: [Array] },
+[info] >       sign_in_provider: 'google.com' },
+[info] >    uid: 'woKVeoDOQUdyDJIDjl5BmediRNz2' }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T06:12:10.467Z] [worker-api-459fb743-80ce-482e-9709-c4df8a7dd58d]: IDLE
+[debug] [2020-03-06T06:12:10.472Z] [work-queue] {"queueLength":0,"workRunningCount":0}

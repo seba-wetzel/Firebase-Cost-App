@@ -1,25 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css';
+import Home from './routes/home';
+import CreateElement from './routes/createElement';
+import CreateProduct from './routes/createProduct';
+import Navbar from './components/navbar';
+
+import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
+import createTheme from '@material-ui/core/styles/createMuiTheme'
+
+const theme = createTheme({
+    palette: {
+      primary: {
+        main:"#009688"},
+      secondary: {
+        main: "#f50057"
+      },
+    },
+  })
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <MuiThemeProvider theme={theme}>
+      <Router>        
+        <Navbar/>
+        <div className="container">
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/element" component={CreateElement}/>
+          <Route exact path="/product" component={CreateProduct}/>
+        </Switch>
+        </div>        
+      </Router>
+      </MuiThemeProvider>
   );
 }
 
