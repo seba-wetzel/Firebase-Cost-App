@@ -25,7 +25,7 @@ export class Home extends Component {
             .then(response => response.json())
             .then(json => {
                 this.setState({prducts: json, loading:true})
-                console.log(this.state)
+                // console.log(this.state)
                 })
             .catch(err => {
                 console.log(err);

@@ -1,9 +1,7 @@
-import React, {Component} from 'react';
 import withFirebaseAuth from 'react-with-firebase-auth';
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
 
-import logo from './logo.svg';
 import config from './firebase-config';//{
 //     apiKey: "AIzaSyAfvOtB5iYq-2AHKcGbH95Banw93TRKCn4",
 //     authDomain: "cost-calculator-3ae3c.firebaseapp.com",
@@ -18,6 +16,18 @@ import config from './firebase-config';//{
 
 const firebaseApp = firebase.initializeApp(config);
 
+const firebaseAppAuth = firebaseApp.auth();
+
+const providers = {
+    googleProvider: new firebase.auth.GoogleAuthProvider(),
+};
+
+export default withFirebaseAuth({
+    providers,
+    firebaseAppAuth,
+  });
+
+/*
 class Login extends Component {
     render (){
         console.log(config)
@@ -36,13 +46,8 @@ class Login extends Component {
         )
     }
 }
-const firebaseAppAuth = firebaseApp.auth();
-
-const providers = {
-    googleProvider: new firebase.auth.GoogleAuthProvider(),
-};
-
 export default withFirebaseAuth({
     providers,
     firebaseAppAuth,
   })(Login);
+  */
