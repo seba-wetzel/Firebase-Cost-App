@@ -12,9 +12,9 @@ app.get('/hola',FBAuth, (req, res)=>{
     return res.status(400).json({msg: "hola"})
 })
 
-app.get('/elements', getAllElements);
+app.get('/elements', FBAuth, getAllElements);
 
-app.post('/elements', FBAuth,createElement);
+app.post('/elements', FBAuth, createElement);
 
 app.post('/products', FBAuth, createProduct);
 

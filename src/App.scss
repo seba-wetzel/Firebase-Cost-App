@@ -1,0 +1,83 @@
+/* Selectable */
+$check-size: 20px;
+$selected-color: #44aadd;
+$transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+$card-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$card-shadow-hover: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: rgb(245, 245, 245);
+  height: 100%;
+}
+.container {
+  margin: 80px auto 0 auto;
+  max-width: 1300px;
+  height: 100%;
+}
+.nav-container {
+  margin: auto;
+}
+.nav-container svg {
+  color: #fff;
+}
+.card{
+  padding: 0px;
+  margin: 20px 20px 20px 20px;
+  transition: $transition;
+  box-shadow: $card-shadow;
+  background: #fff;
+  cursor: pointer;
+  &:hover {
+    box-shadow: $card-shadow-hover;
+  }
+}
+
+
+
+.card .selectable {
+  position: relative;
+  transition: $transition;
+  border: 4px solid transparent;
+  .check {
+    transition: $transition;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: $check-size;    
+    height: $check-size;
+    &:before {
+      transition: $transition;
+      content: '';
+      border: $check-size solid;
+      border-color: transparent;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+    .checkmark {
+      display: block;
+      font: $check-size sans-serif;
+      line-height: $check-size;
+      text-align: center;
+      color: transparent;  
+    }
+  }
+  
+  &.selected {
+    border-color: $selected-color;
+    .check {
+      &:before {
+        border-color: $selected-color $selected-color rgba(0,0,255,0) rgba(255,0,0,0);
+      }
+      .checkmark {
+        color: #fff;
+      }
+    }
+  }
+}

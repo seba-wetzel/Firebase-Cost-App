@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import React, {  } from 'react'
+
 //Material ui imports
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar'
@@ -11,6 +11,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import Avatar from '@material-ui/core/Avatar'
 
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 
 
 const useStyles = makeStyles(theme => ({
@@ -26,7 +28,6 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Navbar = ( props) => {
-
     const { user, signOut, signInWithGoogle } = props
 
     const classes = useStyles();
@@ -42,6 +43,18 @@ const Navbar = ( props) => {
         setAnchorEl(null);
     };
 
+    const   handleChange = (event, value) => {
+        props.changeIndex(value);
+      };
+    
+    const styles = {
+        tabs: {
+          background: '#fffff',
+          height: '100%'
+        },
+    }
+
+
     return (
         <div>
             <AppBar>
@@ -49,9 +62,14 @@ const Navbar = ( props) => {
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton>
-                    <Button color="inherit" component={Link} to="/">Home</Button>
+                    {/* <Button color="inherit" component={Link} to="/">Home</Button>
                     <Button color="inherit" component={Link} to="/product">Product</Button>
-                    <Button color="inherit" component={Link} to="/element">Element</Button>
+                    <Button color="inherit" component={Link} to="/element">Element</Button> */}
+                    <Tabs value={props.index} onChange={handleChange} style={styles.tabs}>
+                        <Tab label="Home" />
+                        <Tab label="Elementos" />
+                        <Tab label="Productos" />
+                    </Tabs>
 
                     {user ? (<div>                        
                         <IconButton
@@ -61,7 +79,7 @@ const Navbar = ( props) => {
                             onClick={handleMenu}
                             color="inherit"
                         >
-                            <Avatar alt="Remy Sharp" src={user.photoURL} />
+                            <Avatar alt="avatar" src={user.photoURL} />
                         </IconButton>
                         <Menu
                             id="menu-appbar"
